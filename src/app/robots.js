@@ -1,5 +1,5 @@
 export default function robots() {
-  const baseUrl = "http://localhost:3000";
+  const baseUrl = "https://puzexa.vercel.app";
 
   return {
     rules: {

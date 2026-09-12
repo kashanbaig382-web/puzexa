@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  metadataBase: new URL("http://localhost:3000"),
+  metadataBase: new URL("https://puzexa.vercel.app"),
 
   title: {
     default: "PUZEXA — Free Browser Brain & Puzzle Games",
@@ -49,13 +49,8 @@ export const metadata = {
     index: true,
     follow: true,
   },
-  
-  alternates: {
-    canonical: "/",
-  },
 
   openGraph: {
-    url: "/",
     type: "website",
     siteName: "PUZEXA",
     title: "PUZEXA — Free Browser Brain & Puzzle Games",
