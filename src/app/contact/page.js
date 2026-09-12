@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ContactForm from "@/components/contact/ContactForm";
 
 export const metadata = {
     title: "Contact PUZEXA",
@@ -33,17 +34,7 @@ export default function ContactPage() {
                     We&apos;d like to hear from you.
                 </p>
 
-                <div className="contact-card">
-                    <span>✉️</span>
-
-                    <div>
-                        <h2>Email</h2>
-
-                        <p>
-                            Contact email will be added before public launch.
-                        </p>
-                    </div>
-                </div>
+                <ContactForm />
 
                 <Link href="/games" className="game-start-btn">
                     Explore Games →
