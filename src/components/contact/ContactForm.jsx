@@ -9,37 +9,39 @@ export default function ContactForm() {
   async function handleSubmit(event) {
     event.preventDefault();
 
+    const form = event.currentTarget;
+
     setIsSubmitting(true);
     setStatus("");
 
-    const formData = new FormData(event.currentTarget);
+    const formData = new FormData(form);
 
-    formData.append(
-      "access_key",
-      process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY
-    );
-
-    formData.append("subject", "New PUZEXA Contact Message");
-    formData.append("from_name", "PUZEXA Website");
+    const payload = {
+      name: formData.get("name"),
+      email: formData.get("email"),
+      message: formData.get("message"),
+    };
 
     try {
-      const response = await fetch(
-        "https://api.web3forms.com/submit",
-        {
-          method: "POST",
-          body: formData,
-        }
-      );
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
 
       const result = await response.json();
 
-      if (result.success) {
+      if (response.ok && result.success) {
         setStatus("success");
-        event.target.reset();
+        form.reset();
       } else {
+        console.error("Contact Error:", result);
         setStatus("error");
       }
-    } catch {
+    } catch (error) {
+      console.error("Contact Request Error:", error);
       setStatus("error");
     } finally {
       setIsSubmitting(false);
