@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-    title: "Privacy Policy | PUZEXA",
+    title: "Privacy Policy",
     description:
         "Read the PUZEXA privacy policy and learn how browser data, local storage, analytics and future advertising may be handled.",
     alternates: {

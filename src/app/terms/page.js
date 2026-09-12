@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-    title: "Terms of Use | PUZEXA",
+    title: "Terms of Use",
     description:
         "Read the terms of use for playing browser games and using PUZEXA.",
     alternates: {
