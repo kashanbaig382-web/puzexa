@@ -1,0 +1,9 @@
+export const metadata = {
+  title: "Daily Brain Challenge — 5 Brain Games Every Day",
+  description:
+    "Take the PUZEXA Daily Brain Challenge with five quick memory, logic, math, counting and word challenges. Return daily and build your streak.",
+};
+
+export default function Layout({ children }) {
+  return children;
+}
