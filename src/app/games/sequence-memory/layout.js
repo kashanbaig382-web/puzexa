@@ -1,9 +1,12 @@
 export const metadata = {
-  title: "Sequence Memory Game — Test Your Memory",
-  description:
-    "Play Sequence Memory on PUZEXA. Remember the flashing sequence, repeat it correctly and see how many levels you can complete.",
+    title: "Sequence Memory Game — Test Your Memory",
+    description:
+        "Play Sequence Memory on PUZEXA. Remember the flashing sequence, repeat it correctly and see how many levels you can complete.",
+    alternates: {
+        canonical: "/games/sequence-memory",
+    },
 };
 
 export default function Layout({ children }) {
-  return children;
+    return children;
 }

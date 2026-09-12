@@ -1,9 +1,12 @@
 export const metadata = {
-  title: "Pattern Recall Game — Test Your Visual Memory",
-  description:
-    "Memorize symbol patterns and recall them correctly in PUZEXA's Pattern Recall game. See how far your visual memory can take you.",
+    title: "Pattern Recall Game — Test Your Visual Memory",
+    description:
+        "Memorize symbol patterns and recall them correctly in PUZEXA's Pattern Recall game. See how far your visual memory can take you.",
+    alternates: {
+        canonical: "/games/pattern-recall",
+    },
 };
 
 export default function Layout({ children }) {
-  return children;
+    return children;
 }
