@@ -4152,3 +4152,15 @@ footer {
 .contact-games-link:hover {
   color: white;
 }
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
