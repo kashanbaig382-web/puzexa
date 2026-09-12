@@ -22,6 +22,10 @@ export const metadata = {
   description:
     "Play free original browser games on PUZEXA. Challenge your memory, logic, math, words, reaction speed and more — no download required.",
 
+  verification: {
+    google: "ZHGMlJyEfoAgAckEEC9z_HfWEKZA_SSr2QBuTUkKGYU",
+  },
+
   keywords: [
     "browser games",
     "brain games",
